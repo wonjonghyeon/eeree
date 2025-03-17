@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'myWebFont';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myLocalFont';
+    src: url("../fonts/NanumGothicOTF00.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'myWebFont';    
+}
+
+html {
+    font-size: 14px;
+    
+}
+a {
+    color: #000;
+    text-decoration: none;
+    background-color: #f9f9f9;
+}
+
+
+p.home {
+    font-family: 'myLocalFont';
+    font-size: 2rem;
+    text-align: center
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.content:nth-child(odd) {
+    flex-direction: row;
+}
+
+.content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content img {
+    max-width: 40%;
+    height: auto;
+}
+
+.content .text {
+    max-width: 50%;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.5rem;
+    margin-top: 30px;
+    padding: 0px;
+    background-color: 0;
+}
+
+@media (max-width: 700px) {
+    .content {
+        flex-direction: column !important;
+        align-items: center;
+        
+    }
+    .content img, .content .text {
+        max-width: 90%;
+        margin: 10px 0;
+    }
+}
