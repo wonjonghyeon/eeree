@@ -45,26 +45,21 @@ body {
 
 .content {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 50px 20px;
 }
 
-.content:nth-child(odd) {
-    flex-direction: row;
-}
-
-.content:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
 .content img {
     max-width: 40%;
     height: auto;
+    object-fit: cover;
 }
 
 .content .text {
     max-width: 50%;
+    font-size: 16px;
 }
 
 footer {
